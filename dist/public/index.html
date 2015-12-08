@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="pl"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Czytnik RSS | Antoni Matusz</title><link rel="shortcut icon" href="http://antoni-matusz.com/images/favicon.png"><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/style.min.css"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --><!-- WARNING: Respond.js doesn't work if you view the page via file:// --><!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]--></head><body><div class="container"><div class="row"><div class="col-md-6"><img class="img-responsive" src="img/rss.png" alt=""></div></div><div class="row"><div class="col-md-8 app-content"></div><div class="col-md-4 app-new-content"></div></div></div><script id="feedsListItemTemplate" type="text/template"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+            <span class="title"><strong><%= title %></strong></span>
+            <button type="button"  class="btn btn-danger deleteFeed">Usuń feed z kanału RSS&nbsp;<span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>  
+            <button type="button"  class="btn btn-success addFeed">Dodaj nowy feed&nbsp;<span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button></script><script id="feedDeleteTemplate" type="text/template"><h1><span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+            <span class="title"><strong><%= title %></strong></span>
+            </h1>
+            <h2 style="red">Czy chcesz usunąć feeda ?</h2>
+            <button class="okDelete" type="button"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>&nbsp;USUŃ</button>
+            <button class="goHome" type="button"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp;Powrót do listy feedów</button></script><script id="feedDetailsTemplate" type="text/template"><h1><span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+            <span class="title"><strong><%= title %></strong></span>
+            </h1>
+            <button class="goHome" type="button"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp;Powrót do listy feedów</button></script><script id="feedShowDetailsTemplate" type="text/template"><h1><span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+            <span class="title"><strong><%= title %></strong></span>
+            </h1>
+            <h2>Treść feedu:</h2>
+            <p><%= description %></p>
+            <button class="goHome" type="button"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp;Powrót do listy feedów</button>
+            <button class="goFeed" type="button"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>&nbsp;Powrót do Feeda</button></script><script id="showAddNewFeedTemplate" type="text/template"><form action="" id="new-movie">
+            <div class="form-group">
+            <label for="title">Tytuł</label>
+            <input type="text"  class="form-control" id="title" placeholder="Podaj tytuł feedu">
+            </div>
+            <div class="form-group">
+            <textarea class="form-control" id="description"  placeholder="Wpisz treść feeda"></textarea>
+            </div>
+            <div class="form-group">
+            <input type="text" class="form-control" id="date" placeholder="dd-mm-yyyy">
+            </div>
+
+            <div class="form-group">
+            <button type="submit" class="btn btn-default addNew">Dodaj feed</button>
+            <button type="button" class="btn btn-default goHome">Powrót do listy feedów</button>
+            </div>
+            </form></script><script src="js/libs.min.js"></script><script src="js/app.min.js"></script></body></html>
