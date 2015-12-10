@@ -123,7 +123,7 @@ app.delete("/feed/:id", function(req, res) {
             res.json({deleted: true});
    
             db.close();
-        });
+        }); 
     });
 });
 
