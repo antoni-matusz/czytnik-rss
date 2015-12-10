@@ -6,7 +6,7 @@
 - Pobieramy klienta [GIT](https://git-scm.com/download/win)
 - Instalujemy [Node.js](https://nodejs.org) oraz [MongoDb](https://www.mongodb.org/downloads#production) 
 - Na komputerze tworzymy nowy folder o dowolnej nazwie np na dysku C, uruchamiamy konsole git-cmd / git-bash, przechodzimy do nowo utworzonego folderu używając polecenia w konsoli <b>cd c:/przykladowa_nazwa_folderu</b>, następnie: <b>git clone https://github.com/antoni-matusz/czytnik-rss.git</b>
-- Po pomyślnym pobraniu REPO, w konsoli przechodzimy do folderu (polecenie: <b>cd czytnik-rss</b>) i wykonujemy polecenie <b>npm install</b>, które pobierze nam wszystkie  zależności niezbędne do prawidłowego działania aplikacji.
+- Po pomyślnym pobraniu REPO, w konsoli przechodzimy do folderu (polecenie: <b>cd czytnik-rss</b>) i wykonujemy polecenie <b>npm install</b>, które pobierze nam wszystkie  zależności niezbędne do prawidłowego działania aplikacji. Po pobraniu wszystkich zależności należy doinstalować dodatkowe npm modules: wykonujemy polecenie: <b>npm install grunt grunt-cli -g</b>
 - Tworzymy dla bazy danych MongoDB, którą wcześniej zainstalowaliśmy zaplecze do przechowywania danych. W tym celu otwieramy nowe okno cmd (konsola) i wpisujemy polecenie <b>cd c:/</b>, następnie <b>mkdir data</b>, <b>cd data</b>, <b>mkdir db</b>.
 - Kolejny krok to uruchomienie bazy danych MongoDB lokalnie na komputerze: w tym celu wykonujemy w konsoli polecenie: <b>cd C:\Program Files\MongoDB\Server\3.0\bin</b> (sprawdź lokalizację instalacji MonboDb na swoim komputerze rożnica w wersji (<b>Server\3.0</b> !!!))
 - Po przejściu do folderu bin wpisujemy polecenie <b>mongod</b>
